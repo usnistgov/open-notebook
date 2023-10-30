@@ -233,7 +233,7 @@
       
       
       
-      <li><a href="https://github.com/wpk-nist-gov/open-notebook" target="_blank"
+      <li><a href="https://github.com/usnistgov/open-notebook" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -250,7 +250,7 @@
       
       
       
-      <li><a href="https://github.com/wpk-nist-gov/open-notebook/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/usnistgov/open-notebook/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -396,8 +396,8 @@ document.write(`
                   
   <!-- markdownlint-disable MD041 -->
 <!-- markdownlint-disable MD041 -->
-<p><a class="reference external" href="https://github.com/wpk-nist-gov/open-notebook"><img alt="Repo" src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff" /></a> <a class="reference external" href="https://pages.nist.gov/open-notebook/"><img alt="Docs" src="https://img.shields.io/badge/docs-sphinx-informational" /></a>
-<a class="reference external" href="https://github.com/wpk-nist-gov/open-notebook/blob/main/LICENSE"><img alt="PyPI license" src="https://img.shields.io/pypi/l/cmomy?color=informational" /></a>
+<p><a class="reference external" href="https://github.com/usnistgov/open-notebook"><img alt="Repo" src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff" /></a> <a class="reference external" href="https://pages.nist.gov/open-notebook/"><img alt="Docs" src="https://img.shields.io/badge/docs-sphinx-informational" /></a>
+<a class="reference external" href="https://github.com/usnistgov/open-notebook/blob/main/LICENSE"><img alt="PyPI license" src="https://img.shields.io/pypi/l/cmomy?color=informational" /></a>
 <a class="reference external" href="https://pypi.org/project/open-notebook"><img alt="PyPI version" src="https://img.shields.io/pypi/v/open-notebook" /></a>
 <a class="reference external" href="https://anaconda.org/wpk-nist/open-notebook"><img alt="Conda (channel only)" src="https://img.shields.io/conda/v/wpk-nist/open-notebook" /></a>
 <a class="reference external" href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg" /></a></p>
@@ -458,6 +458,7 @@ sys.path.pop(0)
 <!-- [[[end]]] -->
 <section id="options">
 <h3>Options<a class="headerlink" href="#options" title="Permalink to this heading">#</a></h3>
+<p>The main command-line program is <code class="docutils literal notranslate"><span class="pre">open-notebook</span></code> with the following options:</p>
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable MD013 -->
 <!-- [[[cog run_command("open-notebook --help", include_cmd=True, wrapper="bash")]]] -->
@@ -503,6 +504,8 @@ override<span class="w"> </span>a<span class="w"> </span>single<span class="w"> 
 <!-- [[[end]]] -->
 <!-- prettier-ignore-end -->
 <!-- markdownlint-enable MD013 -->
+<p>Equivalently, you can use the short name <code class="docutils literal notranslate"><span class="pre">nopen</span></code>, or use
+<code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">open_notebook</span></code>.</p>
 </section>
 <section id="basic-usage">
 <h3>Basic usage<a class="headerlink" href="#basic-usage" title="Permalink to this heading">#</a></h3>
@@ -510,8 +513,8 @@ override<span class="w"> </span>a<span class="w"> </span>single<span class="w"> 
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>open-notebook<span class="w"> </span>.
 </pre></div>
 </div>
-<p>To open a jupyter notebook:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>open-notebook<span class="w"> </span>path/to/notebook.ipynb
+<p>To open a jupyter notebook (here using the short name <code class="docutils literal notranslate"><span class="pre">nopen</span></code>):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nopen<span class="w"> </span>path/to/notebook.ipynb
 </pre></div>
 </div>
 <p>To specify where the central server is running, use the <code class="docutils literal notranslate"><span class="pre">-r/--root</span></code> option. For
