@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>open-notebook &#8212; open-notebook v0.0.1 documentation</title>
+    <title>open-notebook &#8212; open-notebook v0.1.0 documentation</title>
   
   
   
@@ -61,7 +61,7 @@
     <link rel="next" title="Installation" href="installation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="2023-10-27"/>
+    <meta name="docbuild:last-update" content="2023-10-30"/>
   </head>
   
   
@@ -140,7 +140,7 @@
   
   
   
-    <p class="title logo__title">open-notebook v0.0.1 documentation</p>
+    <p class="title logo__title">open-notebook v0.1.0 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -233,7 +233,7 @@
       
       
       
-      <li><a href="https://github.com/usnistgov/open-notebook" target="_blank"
+      <li><a href="https://github.com/wpk-nist-gov/open-notebook" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -250,7 +250,7 @@
       
       
       
-      <li><a href="https://github.com/usnistgov/open-notebook/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/wpk-nist-gov/open-notebook/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -396,8 +396,8 @@ document.write(`
                   
   <!-- markdownlint-disable MD041 -->
 <!-- markdownlint-disable MD041 -->
-<p><a class="reference external" href="https://github.com/usnistgov/open-notebook"><img alt="Repo" src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff" /></a> <a class="reference external" href="https://pages.nist.gov/open-notebook/"><img alt="Docs" src="https://img.shields.io/badge/docs-sphinx-informational" /></a>
-<a class="reference external" href="https://github.com/usnistgov/open-notebook/blob/main/LICENSE"><img alt="PyPI license" src="https://img.shields.io/pypi/l/cmomy?color=informational" /></a>
+<p><a class="reference external" href="https://github.com/wpk-nist-gov/open-notebook"><img alt="Repo" src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff" /></a> <a class="reference external" href="https://pages.nist.gov/open-notebook/"><img alt="Docs" src="https://img.shields.io/badge/docs-sphinx-informational" /></a>
+<a class="reference external" href="https://github.com/wpk-nist-gov/open-notebook/blob/main/LICENSE"><img alt="PyPI license" src="https://img.shields.io/pypi/l/cmomy?color=informational" /></a>
 <a class="reference external" href="https://pypi.org/project/open-notebook"><img alt="PyPI version" src="https://img.shields.io/pypi/v/open-notebook" /></a>
 <a class="reference external" href="https://anaconda.org/wpk-nist/open-notebook"><img alt="Conda (channel only)" src="https://img.shields.io/conda/v/wpk-nist/open-notebook" /></a>
 <a class="reference external" href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg" /></a></p>
@@ -476,27 +476,28 @@ options:
 <span class="w">  </span>-h,<span class="w"> </span>--help<span class="w">            </span>show<span class="w"> </span>this<span class="w"> </span><span class="nb">help</span><span class="w"> </span>message<span class="w"> </span>and<span class="w"> </span><span class="nb">exit</span>
 <span class="w">  </span>--host<span class="w"> </span>HOST<span class="w">           </span>Host<span class="w"> </span>name<span class="w"> </span><span class="o">(</span><span class="nv">default</span><span class="o">=</span><span class="s1">&#39;localhost&#39;</span><span class="o">)</span>
 <span class="w">  </span>-p<span class="w"> </span>PORT,<span class="w"> </span>--port<span class="w"> </span>PORT<span class="w">  </span>Port<span class="w"> </span><span class="o">(</span><span class="nv">default</span><span class="o">=</span><span class="s1">&#39;8888&#39;</span><span class="o">)</span>
-<span class="w">  </span>-r<span class="w"> </span>ROOT,<span class="w"> </span>--root<span class="w"> </span>ROOT<span class="w">  </span>Directory<span class="w"> </span>servers<span class="w"> </span>was<span class="w"> </span>started<span class="w"> </span><span class="k">in</span>.<span class="w"> </span>Defaults<span class="w"> </span>to<span class="w"> </span>current<span class="w"> </span>working<span class="w"> </span>directory.
+<span class="w">  </span>-r<span class="w"> </span>ROOT,<span class="w"> </span>--root<span class="w"> </span>ROOT<span class="w">  </span>Directory<span class="w"> </span>servers<span class="w"> </span>was<span class="w"> </span>started<span class="w"> </span><span class="k">in</span>.<span class="w"> </span>Defaults<span class="w"> </span>to<span class="w"> </span>current<span class="w"> </span>working
+<span class="w">                        </span>directory.
 <span class="w">  </span>--dir-prefix<span class="w"> </span>DIR_PREFIX
 <span class="w">                        </span>Directory<span class="w"> </span>prefix<span class="w"> </span><span class="o">(</span><span class="nv">default</span><span class="o">=</span><span class="s1">&#39;tree&#39;</span><span class="o">)</span>
 <span class="w">  </span>--file-prefix<span class="w"> </span>FILE_PREFIX
 <span class="w">                        </span>File<span class="w"> </span>prefix<span class="w"> </span><span class="o">(</span><span class="nv">default</span><span class="o">=</span><span class="s1">&#39;notebooks&#39;</span><span class="o">)</span>
 <span class="w">  </span>--reset
 <span class="w">  </span>-c<span class="w"> </span>CONFIG,<span class="w"> </span>--config<span class="w"> </span>CONFIG
-<span class="w">                        </span>Config<span class="w"> </span>style<span class="w"> </span>to<span class="w"> </span>use.<span class="w"> </span>This<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>name<span class="w"> </span>of<span class="w"> </span>a<span class="w"> </span>header<span class="w"> </span><span class="k">in</span><span class="w"> </span>one<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>config
-<span class="w">                        </span>files.
+<span class="w">                        </span>Config<span class="w"> </span>style<span class="w"> </span>to<span class="w"> </span>use.<span class="w"> </span>This<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>name<span class="w"> </span>of<span class="w"> </span>a<span class="w"> </span>header<span class="w"> </span><span class="k">in</span><span class="w"> </span>one<span class="w"> </span>of<span class="w"> </span>the
+<span class="w">                        </span>config<span class="w"> </span>files.
 <span class="w">  </span>--create-config<span class="w">       </span>If<span class="w"> </span>passed,<span class="w"> </span>create<span class="w"> </span>.open-notebook.ini
-<span class="w">  </span>--overwrite<span class="w">           </span>Pass<span class="w"> </span>to<span class="w"> </span>overwrite<span class="w"> </span><span class="sb">`</span>~/.open-notebook.toml<span class="sb">`</span><span class="w"> </span><span class="k">if</span><span class="w"> </span>it<span class="w"> </span>exists<span class="w"> </span>with<span class="w"> </span><span class="sb">`</span>--create-
-<span class="w">                        </span>config<span class="sb">`</span>
+<span class="w">  </span>--overwrite<span class="w">           </span>Pass<span class="w"> </span>to<span class="w"> </span>overwrite<span class="w"> </span><span class="sb">`</span>~/.open-notebook.toml<span class="sb">`</span><span class="w"> </span><span class="k">if</span><span class="w"> </span>it<span class="w"> </span>exists<span class="w"> </span>with
+<span class="w">                        </span><span class="sb">`</span>--create-config<span class="sb">`</span>
 <span class="w">  </span>--version<span class="w">             </span>Print<span class="w"> </span>out<span class="w"> </span>program<span class="w"> </span>version
 <span class="w">  </span>-v,<span class="w"> </span>--verbose<span class="w">         </span>Set<span class="w"> </span>verbosity<span class="w"> </span>level.<span class="w"> </span>Can<span class="w"> </span>pass<span class="w"> </span>multiple<span class="w"> </span>times.
 <span class="w">  </span>--dry<span class="w">                 </span>Dry<span class="w"> </span>run.
 
-You<span class="w"> </span>can<span class="w"> </span><span class="nb">set</span><span class="w"> </span>options<span class="w"> </span>with<span class="w"> </span>the<span class="w"> </span>configuration<span class="w"> </span>files<span class="w"> </span><span class="s2">&quot;.open-notebook.toml&quot;</span>.<span class="w"> </span>Configuration<span class="w"> </span>files<span class="w"> </span>are
-found<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>current<span class="w"> </span>directory,<span class="w"> </span>git<span class="w"> </span>root<span class="w"> </span><span class="o">(</span><span class="k">if</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>a<span class="w"> </span>git<span class="w"> </span>tracked<span class="w"> </span>tree<span class="o">)</span>,<span class="w"> </span>and<span class="w"> </span>the<span class="w"> </span>home<span class="w"> </span>directory.<span class="w"> </span>Note
-that<span class="w"> </span>all<span class="w"> </span>these<span class="w"> </span>files<span class="w"> </span>are<span class="w"> </span>considered,<span class="w"> </span><span class="k">in</span><span class="w"> </span>order.<span class="w"> </span>That<span class="w"> </span>is,<span class="w"> </span>you<span class="w"> </span>could<span class="w"> </span>override<span class="w"> </span>a<span class="w"> </span>single<span class="w"> </span>value<span class="w"> </span><span class="k">in</span><span class="w"> </span>the
-current<span class="w"> </span>directory,<span class="w"> </span>and<span class="w"> </span>the<span class="w"> </span>rest<span class="w"> </span>would<span class="w"> </span>be<span class="w"> </span>inherited<span class="w"> </span>from,<span class="w"> </span><span class="k">in</span><span class="w"> </span>order,<span class="w"> </span>git<span class="w"> </span>root<span class="w"> </span>and<span class="w"> </span><span class="k">then</span><span class="w"> </span>the<span class="w"> </span>home
-directory.
+You<span class="w"> </span>can<span class="w"> </span><span class="nb">set</span><span class="w"> </span>options<span class="w"> </span>with<span class="w"> </span>the<span class="w"> </span>configuration<span class="w"> </span>files<span class="w"> </span><span class="s2">&quot;.open-notebook.toml&quot;</span>.<span class="w"> </span>Configuration
+files<span class="w"> </span>are<span class="w"> </span>found<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>current<span class="w"> </span>directory,<span class="w"> </span>git<span class="w"> </span>root<span class="w"> </span><span class="o">(</span><span class="k">if</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>a<span class="w"> </span>git<span class="w"> </span>tracked<span class="w"> </span>tree<span class="o">)</span>,<span class="w"> </span>and<span class="w"> </span>the
+home<span class="w"> </span>directory.<span class="w"> </span>Note<span class="w"> </span>that<span class="w"> </span>all<span class="w"> </span>these<span class="w"> </span>files<span class="w"> </span>are<span class="w"> </span>considered,<span class="w"> </span><span class="k">in</span><span class="w"> </span>order.<span class="w"> </span>That<span class="w"> </span>is,<span class="w"> </span>you<span class="w"> </span>could
+override<span class="w"> </span>a<span class="w"> </span>single<span class="w"> </span>value<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>current<span class="w"> </span>directory,<span class="w"> </span>and<span class="w"> </span>the<span class="w"> </span>rest<span class="w"> </span>would<span class="w"> </span>be<span class="w"> </span>inherited<span class="w"> </span>from,
+<span class="k">in</span><span class="w"> </span>order,<span class="w"> </span>git<span class="w"> </span>root<span class="w"> </span>and<span class="w"> </span><span class="k">then</span><span class="w"> </span>the<span class="w"> </span>home<span class="w"> </span>directory.
 </pre></div>
 </div>
 <!-- [[[end]]] -->
@@ -673,7 +674,7 @@ By William P. Krekelberg
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2023-10-27.
+  Last updated on 2023-10-30.
   <br/>
 </p>
   </div>

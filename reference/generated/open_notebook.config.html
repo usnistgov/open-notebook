@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Configuration file routines (config) &#8212; open-notebook v0.0.1 documentation</title>
+    <title>Configuration file routines (config) &#8212; open-notebook v0.1.0 documentation</title>
   
   
   
@@ -62,7 +62,7 @@
     <link rel="prev" title="Command line interface" href="../cli.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="2023-10-27"/>
+    <meta name="docbuild:last-update" content="2023-10-30"/>
   </head>
   
   
@@ -141,7 +141,7 @@
   
   
   
-    <p class="title logo__title">open-notebook v0.0.1 documentation</p>
+    <p class="title logo__title">open-notebook v0.1.0 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -234,7 +234,7 @@
       
       
       
-      <li><a href="https://github.com/usnistgov/open-notebook" target="_blank"
+      <li><a href="https://github.com/wpk-nist-gov/open-notebook" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -251,7 +251,7 @@
       
       
       
-      <li><a href="https://github.com/usnistgov/open-notebook/issues/new?title=Issue%20on%20page%20%2Freference/generated/open_notebook.config.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/wpk-nist-gov/open-notebook/issues/new?title=Issue%20on%20page%20%2Freference/generated/open_notebook.config.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -417,14 +417,14 @@ document.write(`
 </table>
 <dl class="py function">
 <dt class="sig sig-object py" id="open_notebook.config.get_config_files">
-<span class="sig-prename descclassname"><span class="pre">open_notebook.config.</span></span><span class="sig-name descname"><span class="pre">get_config_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cwd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.open-notebook.toml'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/usnistgov/open-notebook/blob/main/src/open_notebook/config.py#L46-L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#open_notebook.config.get_config_files" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">open_notebook.config.</span></span><span class="sig-name descname"><span class="pre">get_config_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cwd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'.open-notebook.toml'</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/wpk-nist-gov/open-notebook/blob/main/src/open_notebook/config.py#L46-L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#open_notebook.config.get_config_files" title="Permalink to this definition">#</a></dt>
 <dd><p>Find the config file</p>
-<p>Order for search is “current directory”,  “git root”, “user home”.</p>
+<p>Order for search is &quot;current directory&quot;,  &quot;git root&quot;, &quot;user home&quot;.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>cwd</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">&quot;.&quot;</span></code>) – Current directory.</p></li>
-<li><p><strong>home</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>, <em>optional</em>) – Defaults to <code class="docutils literal notranslate"><span class="pre">pathlib.Path.home</span></code>.  For testing purposes.</p></li>
+<li><p><strong>cwd</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">&quot;.&quot;</span></code>) -- Current directory.</p></li>
+<li><p><strong>home</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> or <a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>, <em>optional</em>) -- Defaults to <code class="docutils literal notranslate"><span class="pre">pathlib.Path.home</span></code>.  For testing purposes.</p></li>
 <li><p><strong>config_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>default</em> <code class="docutils literal notranslate"><span class="pre">&quot;.open-notebook.ini&quot;</span></code>)</p></li>
 <li><p><strong>Name of config file</strong></p></li>
 </ul>
@@ -434,7 +434,7 @@ document.write(`
 
 <dl class="py class">
 <dt class="sig sig-object py" id="open_notebook.config.Config">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">open_notebook.config.</span></span><span class="sig-name descname"><span class="pre">Config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/usnistgov/open-notebook/blob/main/src/open_notebook/config.py#L95-L306"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#open_notebook.config.Config" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">open_notebook.config.</span></span><span class="sig-name descname"><span class="pre">Config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/wpk-nist-gov/open-notebook/blob/main/src/open_notebook/config.py#L95-L306"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#open_notebook.config.Config" title="Permalink to this definition">#</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Configuration handler</p>
 <p>Accepts multiple mappings.  Will parse them left to right for matches</p>
@@ -451,13 +451,13 @@ document.write(`
 </table>
 <dl class="py method">
 <dt class="sig sig-object py" id="open_notebook.config.Config.get">
-<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">keys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">_Missing.MISSING</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">factory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/usnistgov/open-notebook/blob/main/src/open_notebook/config.py#L125-L141"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#open_notebook.config.Config.get" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">keys</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">_Missing.MISSING</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">factory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/wpk-nist-gov/open-notebook/blob/main/src/open_notebook/config.py#L125-L141"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#open_notebook.config.Config.get" title="Permalink to this definition">#</a></dt>
 <dd><p>Get value from config(s)</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="open_notebook.config.Config.get_option">
-<span class="sig-name descname"><span class="pre">get_option</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">passed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">_Missing.MISSING</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">section</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">_Missing.MISSING</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">factory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/usnistgov/open-notebook/blob/main/src/open_notebook/config.py#L143-L190"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#open_notebook.config.Config.get_option" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">get_option</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">passed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">_Missing.MISSING</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">section</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">_Missing.MISSING</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">factory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/wpk-nist-gov/open-notebook/blob/main/src/open_notebook/config.py#L143-L190"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#open_notebook.config.Config.get_option" title="Permalink to this definition">#</a></dt>
 <dd><p>Get option value from either passed in option, or from config file (left to right).</p>
 <p>Order of checking is:</p>
 <ul class="simple">
@@ -470,11 +470,11 @@ document.write(`
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>key</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – key to look for.</p></li>
-<li><p><strong>passed</strong> (<em>default</em> <code class="xref py py-class docutils literal notranslate"><span class="pre">MISSING</span></code>) – Passed in value.  If not MISSING, this will be the returned value.</p></li>
-<li><p><strong>section</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – The table section to check.  Fall back to top level of any dict.</p></li>
-<li><p><strong>factory</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#callable" title="(in Python v3.12)"><code class="xref py py-func docutils literal notranslate"><span class="pre">callable()</span></code></a>, <em>optional</em>) – If no value found, return <cite>factory()</cite>.</p></li>
-<li><p><strong>default</strong> – Fallback value to return</p></li>
+<li><p><strong>key</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) -- key to look for.</p></li>
+<li><p><strong>passed</strong> (<em>default</em> <code class="xref py py-class docutils literal notranslate"><span class="pre">MISSING</span></code>) -- Passed in value.  If not MISSING, this will be the returned value.</p></li>
+<li><p><strong>section</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) -- The table section to check.  Fall back to top level of any dict.</p></li>
+<li><p><strong>factory</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#callable" title="(in Python v3.12)"><code class="xref py py-func docutils literal notranslate"><span class="pre">callable()</span></code></a>, <em>optional</em>) -- If no value found, return <cite>factory()</cite>.</p></li>
+<li><p><strong>default</strong> -- Fallback value to return</p></li>
 </ul>
 </dd>
 </dl>
@@ -484,7 +484,7 @@ document.write(`
 
 <dl class="py function">
 <dt class="sig sig-object py" id="open_notebook.config.create_config">
-<span class="sig-prename descclassname"><span class="pre">open_notebook.config.</span></span><span class="sig-name descname"><span class="pre">create_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir_prefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_prefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/usnistgov/open-notebook/blob/main/src/open_notebook/config.py#L310-L366"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#open_notebook.config.create_config" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">open_notebook.config.</span></span><span class="sig-name descname"><span class="pre">create_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir_prefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_prefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwrite</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">home</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/wpk-nist-gov/open-notebook/blob/main/src/open_notebook/config.py#L310-L366"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#open_notebook.config.create_config" title="Permalink to this definition">#</a></dt>
 <dd><p>Create a configuration file.</p>
 </dd></dl>
 
@@ -574,7 +574,7 @@ By William P. Krekelberg
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2023-10-27.
+  Last updated on 2023-10-30.
   <br/>
 </p>
   </div>

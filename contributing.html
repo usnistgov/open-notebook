@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Contributing &#8212; open-notebook v0.0.1 documentation</title>
+    <title>Contributing &#8212; open-notebook v0.1.0 documentation</title>
   
   
   
@@ -62,7 +62,7 @@
     <link rel="prev" title="License" href="license.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="2023-10-27"/>
+    <meta name="docbuild:last-update" content="2023-10-30"/>
   </head>
   
   
@@ -141,7 +141,7 @@
   
   
   
-    <p class="title logo__title">open-notebook v0.0.1 documentation</p>
+    <p class="title logo__title">open-notebook v0.1.0 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -234,7 +234,7 @@
       
       
       
-      <li><a href="https://github.com/usnistgov/open-notebook" target="_blank"
+      <li><a href="https://github.com/wpk-nist-gov/open-notebook" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -251,7 +251,7 @@
       
       
       
-      <li><a href="https://github.com/usnistgov/open-notebook/issues/new?title=Issue%20on%20page%20%2Fcontributing.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/wpk-nist-gov/open-notebook/issues/new?title=Issue%20on%20page%20%2Fcontributing.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -428,7 +428,7 @@ helps, and credit will always be given.</p>
 <!-- prettier-ignore-end -->
 <section id="report-bugs">
 <h3>Report Bugs<a class="headerlink" href="#report-bugs" title="Permalink to this heading">#</a></h3>
-<p>Report bugs at <a class="reference external" href="https://github.com/usnistgov/open-notebook/issues">here</a></p>
+<p>Report bugs at <a class="reference external" href="https://github.com/wpk-nist-gov/open-notebook/issues">here</a></p>
 <p>If you are reporting a bug, please include:</p>
 <ul class="simple">
 <li><p>Your operating system name and version.</p></li>
@@ -454,7 +454,7 @@ such.</p>
 </section>
 <section id="submit-feedback">
 <h3>Submit Feedback<a class="headerlink" href="#submit-feedback" title="Permalink to this heading">#</a></h3>
-<p>The best way to send feedback is to file an issue <a class="reference external" href="https://github.com/usnistgov/open-notebook/issues">here</a>.</p>
+<p>The best way to send feedback is to file an issue <a class="reference external" href="https://github.com/wpk-nist-gov/open-notebook/issues">here</a>.</p>
 <p>If you are proposing a feature:</p>
 <ul class="simple">
 <li><p>Explain in detail how it would work.</p></li>
@@ -577,7 +577,7 @@ search for python interpreters. The variable <code class="docutils literal notra
 the search path, and the development environment will include the extras <code class="docutils literal notranslate"><span class="pre">dev</span></code>
 and <code class="docutils literal notranslate"><span class="pre">nox</span></code> from the <code class="docutils literal notranslate"><span class="pre">project.optional-dependencies</span></code> section of the
 <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> file in the development environment. See
-<a class="reference internal" href="#creating-environment-yaml-requirement-txt-files"><span class="std std-doc">below</span></a> and <a class="reference external" href="https://github.com/usnistgov/pyproject2conda">pyproject2conda</a> for
+<a class="reference internal" href="#creating-environment-yaml-requirement-txt-files"><span class="std std-doc">below</span></a> and <a class="reference external" href="https://github.com/wpk-nist-gov/pyproject2conda">pyproject2conda</a> for
 more info.</p>
 <p>You can also create this file using either of the following commands:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nox<span class="w"> </span>-s<span class="w"> </span>config<span class="w"> </span>--<span class="w"> </span>--python-paths<span class="w"> </span><span class="s2">&quot;~/.conda/envs/python-3.*/bin&quot;</span><span class="w"> </span>--dev-extras<span class="w"> </span>dev<span class="w"> </span>nox...
@@ -624,7 +624,7 @@ from <code class="docutils literal notranslate"><span class="pre">pyproject.toml
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>nox<span class="w"> </span>-s<span class="w"> </span>requirements
 </pre></div>
 </div>
-<p>This uses <a class="reference external" href="https://github.com/usnistgov/pyproject2conda">pyproject2conda</a> to create the requirement files. Note that all
+<p>This uses <a class="reference external" href="https://github.com/wpk-nist-gov/pyproject2conda">pyproject2conda</a> to create the requirement files. Note that all
 requirement files are under something like
 <code class="docutils literal notranslate"><span class="pre">requirements/py{version}-{env-name}.yaml</span></code> (conda environment) or
 <code class="docutils literal notranslate"><span class="pre">requirements/{env-name}.txt</span></code> (virtual environment). The file
@@ -795,7 +795,7 @@ file, or run:</p>
 <li><p><a class="reference external" href="https://github.com/cruft/cruft">cruft</a></p></li>
 <li><p><a class="reference external" href="https://github.com/nedbat/scrivl">scriv</a></p></li>
 <li><p><a class="reference external" href="https://github.com/commitizen-tools/commitizen">commitizen</a> (optional)</p></li>
-<li><p><a class="reference external" href="https://github.com/usnistgov/pyproject2conda">pyproject2conda</a> (optional)</p></li>
+<li><p><a class="reference external" href="https://github.com/wpk-nist-gov/pyproject2conda">pyproject2conda</a> (optional)</p></li>
 <li><p><a class="reference external" href="https://github.com/nedbat/cog">cog</a> (optional)</p></li>
 <li><p><a class="reference external" href="https://github.com/nbQA-dev/nbQA">nbqa</a> (optional)</p></li>
 <li><p><a class="reference external" href="https://github.com/microsoft/pyright">pyright</a> (recommended)</p></li>
@@ -973,7 +973,7 @@ By William P. Krekelberg
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2023-10-27.
+  Last updated on 2023-10-30.
   <br/>
 </p>
   </div>
