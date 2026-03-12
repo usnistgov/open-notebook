@@ -96,7 +96,6 @@ test-extras = [
 typecheck-runner = [ "typecheck-runner>=0.1.0; python_version>'3.9'" ]
 
 # * uv -------------------------------------------------------------------------
-
 [tool.uv]
 required-version = ">=0.7.15"
 default-groups = [ "dev" ]
@@ -117,7 +116,6 @@ mypy.requires-python = ">=3.14"
 nox.requires-python = ">=3.14"
 
 # * Checks ---------------------------------------------------------------------
-
 [tool.repo-review]
 ignore = [
     "NOX103", # I prefer using "nox.options.sessions"
@@ -148,11 +146,18 @@ expand_tables = [
 indent = 4
 keep_full_version = true
 
+[tool.typos.default]
+# nbqa generated
+extend-ignore-re = [ "# %%NBQA-.*" ]
+
 [tool.typos.default.extend-identifiers]
 CPY = "CPY"
 
-# * Testing --------------------------------------------------------------------
+[tool.typos.type.jupyter]
+# only check file name for notebooks.  Use nbaq for contents.
+check-file = false
 
+# * Testing --------------------------------------------------------------------
 [tool.pytest.ini_options]
 addopts = [
     "--cov-config=pyproject.toml",
@@ -177,10 +182,15 @@ strict_xfail = "true"
 
 [tool.coverage]
 run.branch = true
+run.source = [
+    "open_notebook",
+]
 paths.source = [
     "src/",
     # needed for non editable doctests
     ".nox/**/site-packages/",
+    "*/.nox/**/site-packages",
+    "*/src",
 ]
 report.exclude_also = [
     "@overload",
@@ -196,7 +206,6 @@ report.omit = [
 report.show_missing = true
 
 # * typecheck ---------------------------------------------------------------------
-
 [tool.mypy]
 exclude = [
     ".eggs",
@@ -277,7 +286,6 @@ analysis.respect-type-ignore-comments = false
 src.include = [ "tests" ]
 
 # * Dependency creation --------------------------------------------------------
-
 [tool.pyproject2conda]
 user-config = "config/userconfig.toml"
 template-python = "requirements/py{py}-{env}"
@@ -335,7 +343,6 @@ skip-package = true
 style = "requirements"
 
 # * Other tools ----------------------------------------------------------------
-
 [tool.scriv]
 format = "md"
 md_header_level = "2"
