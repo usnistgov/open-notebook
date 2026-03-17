@@ -18,12 +18,8 @@ env:
   FORCE_COLOR: "3"
   UVX_CONSTRAINT: requirements/lock/uvx-tools.txt
   UVX_COMMAND: uvx -crequirements/lock/uvx-tools.txt
-<<<<<<< before updating
-  EXTRA_PYTHON_VERSIONS: "pypy-3.11"
-=======
   NOX_COMMAND: uvx -crequirements/lock/uvx-tools.txt nox
-  # EXTRA_PYTHON_VERSIONS: "pypy-3.11"
->>>>>>> after updating
+  EXTRA_PYTHON_VERSIONS: "pypy-3.11"
 
 permissions: {}
 
@@ -168,12 +164,9 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-<<<<<<< before updating
-=======
           # - windows-latest
         session:
           - typecheck
->>>>>>> after updating
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
@@ -234,19 +227,13 @@ jobs:
       - name: Test with nox
         env:
           python_version: ${{ matrix.python-version }}
-<<<<<<< before updating
-          TMPDIR: ${{ runner.temp }}
-        run: >-
-          $UVX_COMMAND nox -s test-"$python_version" -- ++installpkg dist/*.whl
-        shell: bash
-=======
           options: "++installpkg dist/*.whl"
           session: ${{ matrix.session }}
+          TMPDIR: ${{ runner.temp }}
         run: |
           # shellcheck disable=SC2086
           $NOX_COMMAND -s "${session}-${python_version}" -- $options
         shell: bash -euxo pipefail {0}
->>>>>>> after updating
 
       - name: Upload coverage data
         uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
