@@ -14,7 +14,5 @@ if TYPE_CHECKING:
     from .utils import _Missing  # noqa: F401
 
 
-MISSING_TYPE: TypeAlias = (
-    "Literal[_Missing.MISSING]"  # pyrefly: ignore[type-alias-error]
-)
+MISSING_TYPE: TypeAlias = "Literal[_Missing.MISSING]"  # pyrefly: ignore[type-alias-error]
 """Literal MISSING"""
