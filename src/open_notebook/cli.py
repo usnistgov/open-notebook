@@ -105,7 +105,6 @@ def get_parser() -> argparse.ArgumentParser:
     return parser
 
 
-<<<<<<< before updating
 def set_verbosity_level(logger: logging.Logger, verbosity: int | None) -> None:
     """Set verbosity level."""
     if verbosity is None:
@@ -187,13 +186,9 @@ def main(
     *,
     home: str | Path | None = None,
 ) -> int:
-=======
-def main(argv: list[str] | None = None) -> int:
->>>>>>> after updating
     """Console script for open_notebook."""
     # get cli options
     parser = get_parser()
-<<<<<<< before updating
     cli_options = (
         parser.parse_args() if args is None else parser.parse_args(args)
     )  # pragma: no cover
@@ -221,9 +216,6 @@ def main(argv: list[str] | None = None) -> int:
     else:
         parser.print_help()
         return 2
-=======
-    args = parser.parse_args(argv)
->>>>>>> after updating
 
     return 0
 
