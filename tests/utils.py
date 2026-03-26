@@ -9,14 +9,14 @@ from pathlib import Path
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from collections.abc import Iterator
+    from collections.abc import Generator
     from typing import Any
 
 logger = logging.getLogger(__name__)
 
 
 @contextmanager
-def inside_dir(dirpath: str | Path) -> Iterator[None]:
+def inside_dir(dirpath: str | Path) -> Generator[None]:
     """
     Execute code from inside the given directory
     :param dirpath: String, path of the directory the command is being run.
