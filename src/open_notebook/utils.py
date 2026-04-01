@@ -60,7 +60,7 @@ def get_in(
         return reduce(  # pyrefly: ignore[no-matching-overload]
             operator.getitem,  # pyrefly: ignore[bad-argument-type]
             keys,
-            nested_dict,
+            nested_dict,  # pyrefly: ignore[bad-argument-type]
         )
     except (KeyError, IndexError, TypeError):
         if factory is not None:
