@@ -164,14 +164,14 @@ def create_config(
         msg = "can specify zero or one path for config file"
         raise ValueError(msg)
 
-    config.create_config(**options, overwrite=overwrite, path=p, home=home)  # ty: ignore[missing-argument]
+    config.create_config(**options, overwrite=overwrite, path=p, home=home)
 
 
 def open_paths(options: dict[str, Any], paths: list[Path], dry: bool = False) -> None:
     """Open path as url."""
     from open_notebook import handler
 
-    h = handler.JupyterUrlHandler(**options)  # ty: ignore[missing-argument]
+    h = handler.JupyterUrlHandler(**options)
 
     urls = h.paths_to_urls(paths)
 

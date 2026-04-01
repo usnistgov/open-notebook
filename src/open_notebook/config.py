@@ -108,7 +108,7 @@ class Config:
     ) -> None:
         self.data: Iterable[Mapping[str, Any]]
         if isinstance(data, Mapping):
-            self.data = [data]
+            self.data = [data]  # ty: ignore[invalid-assignment]
         else:
             self.data = data
 
