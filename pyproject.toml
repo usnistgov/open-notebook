@@ -234,9 +234,6 @@ reportUnusedCallResult = false
 [tool.ty]
 # Disable support for `type: ignore` comments
 analysis.respect-type-ignore-comments = false
-<<<<<<< before updating
-src.include = [ "tests" ]
-=======
 src.include = [
     "src",
     "tests",
@@ -244,7 +241,6 @@ src.include = [
     "noxfile.py",
     "tools",
 ]
->>>>>>> after updating
 
 # * Testing --------------------------------------------------------------------
 [tool.pytest.ini_options]
