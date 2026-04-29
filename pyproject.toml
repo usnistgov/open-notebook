@@ -6,7 +6,11 @@ requires = [
 
 [project]
 name = "open-notebook"
+<<<<<<< before updating
 version = "0.2.0"
+=======
+version = "0.1.0"
+>>>>>>> after updating
 description = "Command line program to open jupyter notebooks from single server"
 readme = "README.md"
 keywords = [
@@ -318,6 +322,7 @@ python = "all"
 
 [tool.pyproject2conda.envs.uvx-tools]
 reqs = [
+<<<<<<< before updating
     # these used solely for specking tools to be used with uvx ...
     "conda-lock>=2.5.5",
     "copier",
@@ -329,6 +334,19 @@ reqs = [
     "rooster>=0.1.1",
     "twine>=5.0.0",
     "ty",
+=======
+    # these used solely for specking tools to be run via uvx ...
+    "conda-lock>=4.0.0",
+    "copier-template-extensions>=0.3.3",
+    "copier>=9.14.3",
+    "grayskull>=3.1.0",
+    "prek>=0.3.10",
+    "pyrefly>=0.61.1",
+    "pyright>=1.1.408",
+    "rooster>=0.1.1",
+    "twine>=6.2.0",
+    "ty>=0.0.31",
+>>>>>>> after updating
 ]
 groups = [
     "basedpyright",
