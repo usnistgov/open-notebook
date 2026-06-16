@@ -46,7 +46,6 @@ Homepage = "https://github.com/usnistgov/open-notebook"
 
 [dependency-groups]
 dev = [
-    { include-group = "cog" },
     { include-group = "mypy" },
     { include-group = "nox" },
     { include-group = "test" },
