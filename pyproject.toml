@@ -182,6 +182,12 @@ search-path = [ "." ]
 
 [tool.pyright]
 typeCheckingMode = "strict"
+# strict = [
+#     "noxfile.py",
+#     "src",
+#     "tests",
+#     "tools/*.py",
+# ]
 include = [
     "noxfile.py",
     "src",
@@ -218,12 +224,6 @@ reportUnusedImport = false
 reportUnusedVariable = false
 enableReachabilityAnalysis = false
 
-# strict = [
-#     "src",
-#     "tests",
-#     "noxfile.py",
-#     "tools/*.py",
-# ]
 [[tool.pyright.executionEnvironments]]
 root = "tests"
 reportUnusedCallResult = false
