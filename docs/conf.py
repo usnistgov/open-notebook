@@ -67,6 +67,8 @@ nitpick_ignore = [
 ]
 
 # -- myst stuff ---------------------------------------------------------
+myst_ref_domains = ["std", "py"]  # needed to fix issues with sphinx-argparse==0.6.0
+
 myst_enable_extensions = [
     "dollarmath",
     "amsmath",
