@@ -1,7 +1,7 @@
 [build-system]
 build-backend = "uv_build"
 requires = [
-    "uv-build>=0.11.25,<0.12.0",
+    "uv-build>=0.11.28,<0.12.0",
 ]
 
 [project]
@@ -85,7 +85,7 @@ docs-spelling = [
     { include-group = "docs" },
 ]
 ipython = [ "ipython" ]
-mypy = [ "mypy[faster-cache]>=2.1.0" ]
+mypy = [ "mypy[faster-cache]>=2.3.0" ]
 nox = [ "nox>=2026.4.10" ]
 pylint = [ "pylint" ]
 pytest = [ "pytest" ]
@@ -316,16 +316,16 @@ python = "all"
 [tool.pyproject2conda.envs.uvx-tools]
 pip-deps = [
     # these used solely for specking tools to be run via uvx ...
-    "conda-lock>=4.0.1",
+    "conda-lock>=4.0.2",
     "copier-template-extensions>=0.3.3",
-    "copier>=9.16.0",
+    "copier>=9.17.0",
     "grayskull>=3.1.1",
-    "prek>=0.4.5",
+    "prek>=0.4.9",
     "pyrefly>=1.1.1",
     "pyright>=1.1.411",
     "rooster>=0.1.1",
     "twine>=6.2.0",
-    "ty>=0.0.55",
+    "ty>=0.0.59",
 ]
 groups = [
     "basedpyright",
