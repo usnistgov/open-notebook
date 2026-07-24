@@ -81,11 +81,7 @@ repos:
 
   # * Markdown
   - repo: https://github.com/DavidAnson/markdownlint-cli2
-<<<<<<< before updating
     rev: v0.23.1
-=======
-    rev: v0.23.0
->>>>>>> after updating
     hooks:
       - id: markdownlint-cli2
         alias: markdownlint
