@@ -197,7 +197,7 @@ def main(
     logger.debug("cli options: %s", cli_options)
 
     if cli_options.version:
-        print(get_version_string())  # noqa: T201
+        print(get_version_string())  # ruff:ignore[print]
 
     elif cli_options.create_config:
         create_config(

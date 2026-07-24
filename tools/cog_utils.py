@@ -57,7 +57,7 @@ def run_command(
     if wrapper:
         total = f"```{wrapper}\n" + total + "```\n"
 
-    print(total)  # noqa: T201
+    print(total)  # ruff:ignore[print]
 
 
 def cat_lines(
@@ -87,4 +87,4 @@ def cat_lines(
         output += "\n# ..."
 
     output = "\n```toml\n" + output + "\n```\n"
-    print(output)  # noqa: T201
+    print(output)  # ruff:ignore[print]

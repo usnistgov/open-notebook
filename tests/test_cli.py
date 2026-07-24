@@ -12,7 +12,7 @@ from unittest.mock import patch
 import pytest
 
 from open_notebook import cli
-from open_notebook._compat import tomllib  # noqa: PLC2701
+from open_notebook._compat import tomllib  # ruff:ignore[import-private-name]
 from open_notebook.utils import MISSING
 
 # pyrefly: ignore [missing-import]
@@ -235,6 +235,6 @@ def test_run(example_path: Path) -> None:
 @patch("open_notebook.cli.main", return_value=0)
 def test__main__(mocked_main: Any) -> None:
     with contextlib.suppress(SystemExit):
-        import open_notebook.__main__  # noqa: F401
+        import open_notebook.__main__  # ruff:ignore[unused-import]
 
         mocked_main.assert_called_once_with()
