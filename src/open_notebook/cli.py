@@ -28,6 +28,7 @@ logger: logging.Logger = logging.getLogger(__name__)
 
 
 def get_parser() -> argparse.ArgumentParser:
+<<<<<<< before updating
     """Get base parser."""
     parser = argparse.ArgumentParser(
         prog="open-notebook",
@@ -41,6 +42,12 @@ def get_parser() -> argparse.ArgumentParser:
         git root and then the home directory.
         """,
     )
+=======
+    """Create parser."""
+    parser = argparse.ArgumentParser()
+    _ = parser.add_argument("args", nargs="*", help="Main arguments")
+    _ = parser.add_argument("--option", help="An option")
+>>>>>>> after updating
 
     _ = parser.add_argument(
         "--host",
@@ -217,6 +224,11 @@ def main(
         parser.print_help()
         return 2
 
+<<<<<<< before updating
+=======
+    print("Arguments: " + str(args.args))  # ruff:ignore[print]
+    print(f"Replace this message by putting your code into {PACKAGE}.cli.main")  # ruff:ignore[print]
+>>>>>>> after updating
     return 0
 
 
