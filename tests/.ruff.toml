@@ -1,0 +1,10 @@
+extend = "../pyproject.toml"
+
+[lint]
+ignore = [
+    "ARG001",
+    "D",      # - Don't need to document tests
+    "PT011",
+    "S101",   # - Assert is fine with tests
+    "SLF001",
+]
