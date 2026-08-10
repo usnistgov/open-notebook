@@ -161,7 +161,7 @@ def create_config(
     elif n == 1:
         p = paths[0]
     else:
-        msg = "can specify zero or one path for config file"
+        msg = "Can specify zero or one path for config file"
         raise ValueError(msg)
 
     config.create_config(**options, overwrite=overwrite, path=p, home=home)

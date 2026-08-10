@@ -25,7 +25,7 @@ def test_handler_relative_path(default_handler: JupyterUrlHandler) -> None:
     assert h._path_relative_to_root(Path("~/top/level/a/b")) == Path("a/b")
     assert h._path_relative_to_root(Path("~/top/level/a/b.txt")) == Path("a/b.txt")
 
-    with pytest.raises(ValueError):
+    with pytest.raises(ValueError, match=r"Path .*is not a subpath of root.*"):
         h._path_relative_to_root(Path("~/top"))
 
 
@@ -51,8 +51,8 @@ def test_path_to_url(default_handler: JupyterUrlHandler, tmp_path: Path) -> None
         "http://localhost:8888/notebooks/a/b/tmp.ipynb?reset"
     ]
 
-    with pytest.raises(ValueError):
+    with pytest.raises(ValueError, match=r"Path .*is not a file or directory"):
         h.paths_to_urls(tmp_path / "hello")
 
-    with pytest.raises(ValueError):
+    with pytest.raises(ValueError, match=r"Path .*is not a file or directory"):
         h.paths_to_urls(tmp_path / "hello.ipynb")

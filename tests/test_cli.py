@@ -1,4 +1,5 @@
 # pylint: disable=unused-argument
+# ruff: file-ignore[unused-function-argument]
 from __future__ import annotations
 
 import contextlib
@@ -186,7 +187,7 @@ def test_create_config0(example_path: Path) -> None:
 
     # test that multiple paths creates error
 
-    with pytest.raises(ValueError):
+    with pytest.raises(ValueError, match=r"Can specify zero.*"):
         cli.create_config(options=options, paths=[Path(x) for x in ("a", "a/b")])
 
 
