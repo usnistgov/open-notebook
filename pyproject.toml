@@ -182,8 +182,6 @@ ruff.strictly-empty-init-modules = false
 "tests/**" = [
     "D",      # - Don't need to document tests
     "S101",   # - Assert is fine with tests
-    "ARG001",
-    "PT011",
     "SLF001",
 ]
 

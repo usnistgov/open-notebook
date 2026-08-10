@@ -1,4 +1,5 @@
 # pylint: disable=unused-argument
+# ruff: file-ignore[unused-function-argument]
 from __future__ import annotations
 
 from pathlib import Path
@@ -118,7 +119,7 @@ def test_find_config_with_git(example_path_with_git: Path, home_path: Path) -> N
 def test_create_config_no_parent(example_path_with_git_config: Path) -> None:
     path = example_path_with_git_config / "a" / "thing" / "test"
 
-    with pytest.raises(OSError):
+    with pytest.raises(OSError, match=r"Can only specify.*"):
         config.create_config(
             host="localhost",
             port="8888",
@@ -162,7 +163,7 @@ def test_find_config_with_git_config(
         assert out["git"] == example_path_with_git_config / config.CONFIG_FILE_NAME
         assert out["home"] == home_path / config.CONFIG_FILE_NAME
 
-        with pytest.raises(ValueError):
+        with pytest.raises(ValueError, match=r"file .* exists.*"):
             config.create_config(
                 host="localhost",
                 port="8888",
