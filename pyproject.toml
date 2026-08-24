@@ -1,11 +1,7 @@
 [build-system]
 build-backend = "uv_build"
 requires = [
-<<<<<<< before updating
-    "uv-build>=0.12.4,<0.13.0",
-=======
     "uv-build>=0.12.5,<0.13.0",
->>>>>>> after updating
 ]
 
 [project]
@@ -40,19 +36,13 @@ dependencies = [
     "typing-extensions; python_version<'3.11'",
 ]
 
-<<<<<<< before updating
-[project.scripts]
-nopen = "open_notebook.cli:main"
-open-notebook = "open_notebook.cli:main"
-
-=======
->>>>>>> after updating
 [project.urls]
 Documentation = "https://pages.nist.gov/open-notebook/"
 Homepage = "https://github.com/usnistgov/open-notebook"
 
 [project.scripts]
-open_notebook = "open_notebook.cli:main"
+nopen = "open_notebook.cli:main"
+open-notebook = "open_notebook.cli:main"
 
 [dependency-groups]
 dev = [
@@ -410,11 +400,7 @@ pip-deps = [
     "pyright>=1.1.411",
     "rooster>=0.1.1",
     "twine>=7.0.0",
-<<<<<<< before updating
-    "ty>=0.0.71",
-=======
     "ty>=0.0.72",
->>>>>>> after updating
 ]
 groups = [
     "basedpyright",
