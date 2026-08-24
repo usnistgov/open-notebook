@@ -1,7 +1,11 @@
 [build-system]
 build-backend = "uv_build"
 requires = [
+<<<<<<< before updating
     "uv-build>=0.12.4,<0.13.0",
+=======
+    "uv-build>=0.12.5,<0.13.0",
+>>>>>>> after updating
 ]
 
 [project]
@@ -36,13 +40,19 @@ dependencies = [
     "typing-extensions; python_version<'3.11'",
 ]
 
+<<<<<<< before updating
 [project.scripts]
 nopen = "open_notebook.cli:main"
 open-notebook = "open_notebook.cli:main"
 
+=======
+>>>>>>> after updating
 [project.urls]
 Documentation = "https://pages.nist.gov/open-notebook/"
 Homepage = "https://github.com/usnistgov/open-notebook"
+
+[project.scripts]
+open_notebook = "open_notebook.cli:main"
 
 [dependency-groups]
 dev = [
@@ -85,7 +95,7 @@ docs-spelling = [
     { include-group = "docs" },
 ]
 ipython = [ "ipython" ]
-mypy = [ "mypy[faster-cache]>=2.3.0" ]
+mypy = [ "mypy[faster-cache]>=2.3.1" ]
 nox = [ "nox>=2026.8.10" ]
 pylint = [ "pylint" ]
 pytest = [ "pytest" ]
@@ -336,10 +346,10 @@ minversion = "8"
 strict_xfail = "true"
 
 [tool.coverage]
-run.branch = true
 run.source = [
     "open_notebook",
 ]
+run.branch = true
 paths.source = [
     "src/",
     # needed for non editable doctests
@@ -347,16 +357,16 @@ paths.source = [
     "*/.nox/**/site-packages",
     "*/src",
 ]
-report.exclude_also = [
-    "@overload",
-    "if TYPE_CHECKING:",
-]
 report.include = [
     "src/*",
 ]
 report.omit = [
     "*/_typing.py",
     "*/vendored/*",
+]
+report.exclude_also = [
+    "@overload",
+    "if TYPE_CHECKING:",
 ]
 report.show_missing = true
 
@@ -395,12 +405,16 @@ pip-deps = [
     "copier-template-extensions>=0.3.3",
     "copier>=9.17.1",
     "grayskull>=3.1.1",
-    "prek>=0.4.13",
+    "prek>=0.4.14",
     "pyrefly>=1.2.0",
     "pyright>=1.1.411",
     "rooster>=0.1.1",
     "twine>=7.0.0",
+<<<<<<< before updating
     "ty>=0.0.71",
+=======
+    "ty>=0.0.72",
+>>>>>>> after updating
 ]
 groups = [
     "basedpyright",
