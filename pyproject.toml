@@ -182,13 +182,9 @@ ruff.strictly-empty-init-modules = false
     "PD",  # - not using pandas?
 ]
 "tests/**" = [
-    "D",      # - Don't need to document tests
-<<<<<<< before updating
-    "S101",   # - Assert is fine with tests
-    "SLF001",
-=======
-    "assert", # - Assert is fine with tests
->>>>>>> after updating
+    "D",                     # - Don't need to document tests
+    "assert",                # - Assert is fine with tests
+    "private-member-access",
 ]
 
 # * Checks ---------------------------------------------------------------------
