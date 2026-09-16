@@ -49,7 +49,7 @@ def base_cli_options(
     dry: bool = False,
     paths: list[Path | str] | None = None,
 ) -> dict[str, Any]:
-    paths_verified = [] if paths is None else [Path(p) for p in paths]
+    paths_verified: list[Path] = [] if paths is None else [Path(p) for p in paths]
 
     return {
         "host": host,
