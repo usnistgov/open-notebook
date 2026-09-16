@@ -8,7 +8,6 @@ import pytest
 
 from open_notebook import config
 
-# pyrefly: ignore [missing-import]
 from .utils import run_inside_dir
 
 if TYPE_CHECKING:
