@@ -57,10 +57,10 @@ def get_in(
     from functools import reduce
 
     try:
-        return reduce(  # pyrefly: ignore[no-matching-overload]
-            operator.getitem,  # pyrefly: ignore[bad-argument-type]
+        return reduce(
+            operator.getitem,
             keys,
-            nested_dict,  # pyrefly: ignore[bad-argument-type]
+            nested_dict,
         )
     except (KeyError, IndexError, TypeError):
         if factory is not None:

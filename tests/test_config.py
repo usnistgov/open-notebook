@@ -8,7 +8,6 @@ import pytest
 
 from open_notebook import config
 
-# pyrefly: ignore [missing-import]
 from .utils import base_options, inside_dir
 
 

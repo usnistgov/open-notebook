@@ -16,7 +16,6 @@ from open_notebook import cli
 from open_notebook._compat import tomllib  # ruff:ignore[import-private-name]
 from open_notebook.utils import MISSING
 
-# pyrefly: ignore [missing-import]
 from .utils import base_options, run_inside_dir
 
 if TYPE_CHECKING:
