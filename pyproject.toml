@@ -202,6 +202,12 @@ ignore = [
 src_dir = [ "src" ]
 toplevel = [ "open_notebook" ]
 
+[tool.deptry]
+known_first_party = [ "open_notebook" ]
+# Group: ignores
+per_rule_ignores.DEP001 = [ "pkginfo" ]
+per_rule_ignores.DEP004 = [ "nox", "pytest" ]
+
 [tool.pyproject-fmt]
 indent = 4
 keep_full_version = true
