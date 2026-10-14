@@ -1,4 +1,4 @@
-# * Variables ------------------------------------------------------------------
+# * Variables --------------------------------------------------------------------------
 
 PACKAGE_NAME := "open-notebook"
 IMPORT_NAME := "open_notebook"
@@ -12,7 +12,7 @@ UVRUN_OPTS := ""
 UVRUN := trim("uv run " + UVRUN_OPTS)
 TYPECHECK := "-m typecheck_runner -v"
 
-# * Functions ------------------------------------------------------------------
+# * Functions --------------------------------------------------------------------------
 
 # run nox
 [group("tools")]
